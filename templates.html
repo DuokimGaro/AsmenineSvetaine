@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" , content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>COVID-19</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="collapse_target">
+            <a class="navbar-brand" href="index.html"> <img src="css/img/logotipas.png" height="100" width="280"> </a>
+            <ul class="navbar-nav nav-left">
+                <li class="nav-item"><a class="nav-link" href="videos.html"> Naudingi video įrašai</a></li>
+                <li class="nav-item active"><a class="nav-link" href="templates.html"> Statistika</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html"> Parama</a></li>
+                <li class="nav-item"><a class="nav-link" href="help.html"> Susisiekite</a></li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <button type="button" data-toggle="modal" data-target="#loginModal" id="signin" key="Prisijungti">
+                    Prisijungti </button>
+                <button type="button" data-toggle="modal" data-target="#signupModal" id="signup" key="Registruotis">
+                    Registruotis</button>
+            </ul>
+            <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content " id="loginform">
+                        <div class="modal-header">
+                            <h2 class="col-12 modal-title text-center" id="loginhead" key="login">Prisijungimas
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden='true'>&times;</span>
+                                </button>
+                            </h2>
+                        </div>
+                        <div class="modal-body" id="loginbody">
+                            <form class="needs-validation" novalidate>
+                                <div class="form-group" id="loginmail">
+                                    <i class="fas fa-envelope"></i>
+                                    <label for="exampleInputEmail1" key="label_email"> Įveskite el.paštą</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" data-translate="email_placeholder"
+                                        placeholder="Įveskite el.paštą" key="email" required>
+                                    <div class="invalid-feedback" key="invalid_email">
+                                        Prašome įvesti taisyklingą el.paštą
+                                    </div>
+                                </div>
+                                <div class="form-group" id=loginpass>
+                                    <i class="fas fa-id-card"></i>
+                                    <label for="exampleInputPassword1" key="label_password">Įveskite slaptažodį</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        data-translate="password_placeholer" placeholder="Slaptažodis" key="password"
+                                        required>
+                                    <div class="invalid-feedback" key="invalid_password">
+                                        Prašome įvesti slaptažodį
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn" key="login"
+                                    id=loginmodalbutton>Prisijungimas</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content" id="signupform">
+                        <div class="modal-header" id="signuphead">
+                            <h2 class="col-12 modal-title text-center" key="signup">Registracija
+                                <button type="button" class="close" data-dismiss="modal"><span
+                                        aria-hidden='true'>&times;</span></button>
+                            </h2>
+                        </div>
+                        <div class="modal-body" id="signupbody">
+                            <form class="needs-validation" novalidate>
+                                <div class="form-group" id="loginmail">
+                                    <i class="fas fa-envelope"></i>
+                                    <label for="exampleInputEmail1" key="label_email"> Įveskite el.paštą</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" data-translate="email_placeholder"
+                                        placeholder="Įveskite el.paštą" key="email" required>
+                                    <div class="invalid-feedback" key="invalid_email">
+                                        Prašome įvesti taisyklingą el.paštą
+                                    </div>
+                                </div>
+                                <div class="form-group" id="signupusername">
+                                    <i class="fas fa-envelope"></i>
+                                    <label for="input_username" key="label_username"> Įveskite savo slapyvardį</label>
+                                    <input type="text" class="form-control" id="input_username"
+                                        aria-describedby="usernameHelp" data-translate="username_placeholder"
+                                        placeholder="Įveskite slapyvardį" key="username" required>
+                                    <div class="invalid-feedback" key="invalid_username">
+                                        Prašome įvesti slapyvardį
+                                    </div>
+                                </div>
+                                <div class="form-group" id=signuppass>
+                                    <i class="fas fa-id-card"></i>
+                                    <label for="exampleInputPassword1" key="label_password">Įveskite savo
+                                        slaptažodį</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        data-translate="password_placeholer" placeholder="Slaptažodis" key="password"
+                                        required>
+                                    <div class="invalid-feedback" key="invalid_password">
+                                        Prašome įvesti slaptažodį
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn" id="signupmodalbutton" key="signup">
+                                    Sukurti paskyrą</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="content" class="group" role="main">
+        <div class="container">
+            <img src="css/img/serga.jpg" id="serga">
+            <img src="css/img/mire.jpg" id="mire">
+        </div>
+
+        <article>
+            <section>
+                <h1 id="ataskaita">
+                    Paskutinių 3 dienų ataskaita
+                </h1>
+
+                <p id="ataskaitatext">
+                    &#10095 Baladžio 15 d. buvo nuspręsta uždaryti Nemenčinės miestelį nuo balandžio 16 iki 30 dienos
+                    dėl ligos
+                    protrūkio vietiniame fabrike. Ministras pirmininkas Saulius Skvernelis pranešė, jog tik tie, kurie
+                    dirba ir gyvena Nemenčinėje galės atvykti į gyvenvietę. O išvykti iš miestelio bus leidžiama tik
+                    tiems, kurie dirba už jo ribų arba privalo išvykti dėl sveikatos priežasčių.
+                    <br>
+                    &#10095 Balandžio 17 d. buvo paskelbta, kad profilaktiškai dėl ligos bus tiriami visi Nemenčinės
+                    gyventojai[75].
+                    <br>
+                    &#10095 Balandžio 18 d. buvo nustatyti dar 90 COVID-19 ligos atvejų šalyje, iš kurių 52 atvejai buvo
+                    kilę iš
+                    Nemenčinės infekcijos židinio[75]. Dalis likusių atvejų kilo iš naujo infekcijos židinio Klaipėdoje
+                    esančiuose palaikomosios slaugos namuose. Ten COVID-19 liga nustatyta 30 iš 38 pacientų ir dešimčiai
+                    iš 25 darbuotojų[76]. Šis protrūkis buvo reikšmingas, kadangi per savaitę iki šios dienos Lietuvoje
+                    kasdien buvo diagnozuojami vidutiniškai tik 22,5 nauji ligos atvejai.
+                </p>
+                <h1 id="mireh1">Paskutinės mirtys</h1>
+                <p id="miretext">
+                    &#10095 Balandžio 9 d. Klaipėdoje buvo patvirtinta šešioliktoji mirtis nuo COVID-19 ligos[69].
+                    <br>
+                    &#10095 Balandžio 10 d. Šiauliuose buvo patvirtinta septynioliktoji šios pandemijos mirtis[70].
+                </p>
+            </section>
+        </article>
+    </main>
+    <footer class="page-footer font-small">
+        <div class="footer-copyright text-center">© 2020 Puslapio autorius: <br>
+            <a> Vilius Pečiulis ITF-18/2</a>
+        </div>
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+</html>

@@ -1,0 +1,347 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+@font-face
+{
+    font-family: "MuseoSans-700";
+    src:url(fonts/Museo700-Regular.otf);
+}
+
+@font-face
+{
+    font-family: "MuseoSans-900";
+    src:url(fonts/museo-sans-900.woff);
+}
+
+html
+{
+    height: 100vh;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background-image: url('img/front_page_PNG.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navbar-brand
+{
+    float: none;
+    margin-top:-0.5%;
+}
+
+.navbar
+{
+    margin-left:14%;
+    margin-top:1%;
+}
+
+.navbar-nav
+{
+    width: 100%;
+    min-width: fit-content;
+}
+
+.navbar-nav.nav-left li a
+{
+    color: white;
+    padding: 0px 20px;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-style: bold;
+    display: inline-block;
+    border-bottom: 4px solid transparent;
+}
+
+.navbar-nav li.active a
+{
+    border-bottom: 4px solid red;
+    font-weight: bolder;
+    color: red;
+}
+
+.navbar-nav li a:hover
+{
+    border-bottom: 4px solid red;
+    font-weight: bolder;
+    color: red;
+}
+
+.nav.navbar-nav 
+{
+    margin-left : 5%!important;
+}
+
+.nav.navbar-nav button
+{
+    font-size: 16px;
+    color: white;
+    border-color: white; 
+	margin-right: 5px!important;
+    border-radius: 10px;
+    width: 100px;
+    height:  50px;
+    background: none;
+    border:transparent;
+    margin:0;
+}
+
+#signin
+{
+    background-color: red;
+}
+
+#signin:hover
+{
+    background: white;
+    border-color: white;
+    cursor:pointer;
+    color: black;
+}
+
+#signup:hover
+{
+    background-color: white;
+    cursor:pointer;
+    color: black;
+}
+
+#signup
+{
+    background: red;
+    border-color: transparent;
+    color: white;
+    margin-left:0;
+}
+
+#content h1
+{
+    color:white;
+    float:center;
+    font-size: 50px;
+    font-family:'MuseoSans-900';
+    margin-top:5%;
+    margin-left:15.5%;
+    position: relative;
+}
+
+#content p
+{
+    color:white;
+    float:center;
+    font-size: 20px;
+    font-family: "MuseoSans-700";
+    margin-top:5%;
+    margin-left:15.5%;
+}
+
+.create button
+{
+    float:center;
+    margin-top:3%;
+    margin-left:15.3%;
+    border-radius: 19px;
+    padding: 20px 50px 20px 50px;
+    background-color: rgb(238, 101, 101);
+    border-color: transparent;
+    font-family: "MuseoSans-900";
+    font-size: 20px;
+    color:white;
+}
+
+.create button:hover
+{
+    background-color: rgb(241, 79, 79);
+    cursor:pointer;
+}
+
+.page
+{
+    border-radius: 5px;
+    margin-top:0%;
+    margin-left:15.5%;
+}
+
+.page input[type="radio"]:checked {
+	background-color: red;
+	top: 12.5px;
+	height: 20px;
+    width: 20px;
+	border: 5px solid white;
+}
+
+.page input[type="radio"]
+{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    position: relative;
+
+    background-color: red;
+    color: #4677ff;
+    top: 10px;
+    height: 15px;
+    width: 15px;
+    border: 0;
+    border-radius: 100%;
+    cursor: pointer;     
+    margin-right: 2%;
+    outline: none;
+}
+
+@media all and (max-width:1199px) {
+    .navbar-brand
+    {
+        padding-bottom: 20px!important;
+    }
+    .navbar-nav.nav-left
+    {
+        padding-bottom: 20px;
+    }
+    .nav.navbar-nav
+    {
+        margin-left: 2%!important;
+    }
+    .nav.navbar-nav button
+    {
+        margin-bottom: 10px!important;
+    }
+
+}
+.container.jumbotron.text-center
+{
+    background-color: transparent;
+    padding: 5px 5px;
+    width:28%;
+    margin-top:2%;
+    justify-content: center;
+}
+
+#modalsignin
+{
+   background-color: blue;
+   margin-right:43%;
+}
+
+#agreement
+{
+    margin-top:-10%;
+    margin-left:5%;
+}
+
+.container img
+{
+    width: 450px;
+    height: 300px;
+    margin-left:6.5%;
+    margin-top: 5%;
+}
+
+.carousel-item
+{
+    margin-top: 2%;
+    margin-left: 19%;
+}
+
+.carousel-indicators li
+{
+    display: none;
+}
+
+#help1, #help2
+{
+    color:red;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.list-unstyled
+{
+    margin-top: 10%;
+}
+
+.page-footer
+{
+   border-top: 1px solid red;
+}
+
+.footer-copyright{
+    color:#FFF;
+}
+
+#ataskaita, #ataskaitatext, #mireh1, #miretext
+{
+    transition: 2s ease-in;
+    visibility: hidden;
+}
+
+#ataskaitatext
+{
+    font-size: 18px!important;
+}
+
+#serga, #mire
+{
+    cursor: pointer;
+}
+
+#saskaitos h1, p{
+    color:white;
+}
+
+#saskaitos2 h1, p{
+    color:white;
+}
+
+.row
+{
+    max-width: 100%;
+    margin-top: 5%;
+}
+
+.column
+{
+    float:left;
+    width: 50%;
+}
+
+.column li a{
+    color: red;
+    opacity: 0;
+}
+
+#saskaitos, #saskaitos2
+{
+    margin-left: 32%;
+}
+
+#TapinoFondas, #Ministerija
+{
+    cursor: pointer;
+}
+
+#TapinoText, #MinisterijaText
+{
+    opacity: 0;
+}
+
+#helpbtn
+{
+    height: 50px;
+    width: 150px;
+    border-radius:10px;
+    width: 550px;
+    background-color: red;
+    cursor: pointer;
+    border-color: red;
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" , content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>COVID-19</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="collapse_target">
+            <a class="navbar-brand" href="index.html"> <img src="css/img/logotipas.png" height="100" width="280"> </a>
+            <ul class="navbar-nav nav-left">
+                <li class="nav-item"><a class="nav-link" href="videos.html"> Naudingi video įrašai</a></li>
+                <li class="nav-item"><a class="nav-link" href="templates.html"> Statistika</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html"> Parama</a></li>
+                <li class="nav-item active"><a class="nav-link" href="help.html"> Susisiekite</a></li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <button type="button" data-toggle="modal" data-target="#loginModal" id="signin" key="Prisijungti">
+                    Prisijungti </button>
+                <button type="button" data-toggle="modal" data-target="#signupModal" id="signup" key="Registruotis">
+                    Registruotis</button>
+            </ul>
+            <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content " id="loginform">
+                        <div class="modal-header">
+                            <h2 class="col-12 modal-title text-center" id="loginhead" key="login">Prisijungimas
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden='true'>&times;</span>
+                                </button>
+                            </h2>
+                        </div>
+                        <div class="modal-body" id="loginbody">
+                            <form class="needs-validation" novalidate>
+                                <div class="form-group" id="loginmail">
+                                    <i class="fas fa-envelope"></i>
+                                    <label for="exampleInputEmail1" key="label_email"> Įveskite el.paštą</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" data-translate="email_placeholder"
+                                        placeholder="Įveskite el.paštą" key="email" required>
+                                    <div class="invalid-feedback" key="invalid_email">
+                                        Prašome įvesti taisyklingą el.paštą
+                                    </div>
+                                </div>
+                                <div class="form-group" id=loginpass>
+                                    <i class="fas fa-id-card"></i>
+                                    <label for="exampleInputPassword1" key="label_password">Įveskite slaptažodį</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        data-translate="password_placeholer" placeholder="Slaptažodis" key="password"
+                                        required>
+                                    <div class="invalid-feedback" key="invalid_password">
+                                        Prašome įvesti slaptažodį
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn" key="login"
+                                    id=loginmodalbutton>Prisijungimas</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content" id="signupform">
+                        <div class="modal-header" id="signuphead">
+                            <h2 class="col-12 modal-title text-center" key="signup">Registracija
+                                <button type="button" class="close" data-dismiss="modal"><span
+                                        aria-hidden='true'>&times;</span></button>
+                            </h2>
+                        </div>
+                        <div class="modal-body" id="signupbody">
+                            <form class="needs-validation" novalidate>
+                                <div class="form-group" id="loginmail">
+                                    <i class="fas fa-envelope"></i>
+                                    <label for="exampleInputEmail1" key="label_email"> Įveskite el.paštą</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" data-translate="email_placeholder"
+                                        placeholder="Įveskite el.paštą" key="email" required>
+                                    <div class="invalid-feedback" key="invalid_email">
+                                        Prašome įvesti taisyklingą el.paštą
+                                    </div>
+                                </div>
+                                <div class="form-group" id="signupusername">
+                                    <i class="fas fa-envelope"></i>
+                                    <label for="input_username" key="label_username"> Įveskite savo slapyvardį</label>
+                                    <input type="text" class="form-control" id="input_username"
+                                        aria-describedby="usernameHelp" data-translate="username_placeholder"
+                                        placeholder="Įveskite slapyvardį" key="username" required>
+                                    <div class="invalid-feedback" key="invalid_username">
+                                        Prašome įvesti slapyvardį
+                                    </div>
+                                </div>
+                                <div class="form-group" id=signuppass>
+                                    <i class="fas fa-id-card"></i>
+                                    <label for="exampleInputPassword1" key="label_password">Įveskite savo
+                                        slaptažodį</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        data-translate="password_placeholer" placeholder="Slaptažodis" key="password"
+                                        required>
+                                    <div class="invalid-feedback" key="invalid_password">
+                                        Prašome įvesti slaptažodį
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn" id="signupmodalbutton" key="signup">
+                                    Sukurti paskyrą</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=Vilniaus%20Gedimino%20technikos%20universi&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                    href="https://www.emojilib.com/jcpenney-coupons/"></a></div>
+            <style>
+                .mapouter {
+                    text-align: right;
+                    height: 450px;
+                    width: 550px;
+                }
+
+                .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 450px;
+                    width: 550px;
+                    border-radius: 30px !important;
+                }
+            </style>
+        </div>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Report" id="helpbtn"> Gauti
+            skambutį</button>
+    </div>
+    <div class="modal fade" id="Report" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" id="reportcontent">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Fill report</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="needs-validation" novalidate>
+                        <div class="form-group">
+                            <i class="fas fa-envelope"></i>
+                            <label for="exampleInputEmail1"> Įveskite el.paštą</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="El.paštas" required>
+                            <div class="invalid-feedback">
+                                El.paštas yra privalomas
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <i class="fas fa-phone"></i>
+                            <label for="subject" key="label_subject"> Įveskite telefono numerį</label>
+                            <input type="text" class="form-control" id="subject" aria-describedby="subjectHelp"
+                                data-translate="subject_placeholder" placeholder="Telefono numeris" key="subject"
+                                required>
+                            <div class="invalid-feedback" key="invalid_subject">
+                                Telefono numeris yra privalomas
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <i class="fas fa-edit"></i>
+                            <label data-error="wrong" data-translate="message_placeholder" data-success="right"
+                                for="form8">Jūsų pranešimas</label>
+                            <textarea type="text" id="form8" class="md-textarea form-control" rows="4"
+                                required></textarea>
+                            <div class="invalid-feedback" key="invalid_message">
+                                Pranešimas yra privalomas
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary" key="submit">Siųsti</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer font-small fixed-bottom">
+        <div class="footer-copyright text-center">© 2020 Puslapio autorius: <br>
+            <a> Vilius Pečiulis ITF-18/2</a>
+        </div>
+    </footer>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+
+</html>
